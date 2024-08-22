@@ -23,6 +23,23 @@ class StudentTest {
         assertEquals("A", s.grade());
     }
 
+    @Test
+    @DisplayName("ชื่อ")
+    void testChangeName()
+    {
+        Student s = new Student("6xxxxxxxx", "StudentTest");
+        s.changeName("AAAA");
+        assertEquals("AAAA", s.getName());
+    }
+
+
+    @Test
+    @DisplayName("ไอดี")
+    void testIsId()
+    {
+        Student s = new Student("6xxxxxxxx", "StudentTest");
+        assertTrue(s.isId("6xxxxxxxx"));
+    }
 
 
 }
