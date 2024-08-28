@@ -31,6 +31,11 @@ public class User {
         return result.verified;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
     public String getUsername() {
         return username;
     }

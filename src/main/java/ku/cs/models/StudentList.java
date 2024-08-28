@@ -58,4 +58,12 @@ public class StudentList {
     public ArrayList<Student> getStudents() {
         return students;
     }
+
+
+    public Student findStudentByObject(Student student) {
+        if (students.contains(student)){
+            return student;
+        }
+        return null;
+    }
 }
